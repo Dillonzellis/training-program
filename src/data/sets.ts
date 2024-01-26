@@ -20,3 +20,10 @@ export const back = [
   "Pull Over",
   "Single Arm Pull Over",
 ] as const;
+
+export const biceps = [
+  "Alternating Bicep Curls",
+  "Bar Curl",
+  "Single Arm Behind Back Cable Curl",
+  "Front Cable Curl",
+] as const;
