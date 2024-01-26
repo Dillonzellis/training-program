@@ -15,7 +15,7 @@ export default function Home() {
 
         <div className="flex flex-col justify-start items-start">
           <Button asChild className="p-0" variant="link">
-            <Link href="/">Push/Pull/Legs</Link>
+            <Link href="/push-pull-legs">Push/Pull/Legs</Link>
           </Button>
 
           <Button asChild className="p-0" variant="link">
