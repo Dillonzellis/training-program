@@ -1,6 +1,8 @@
+import { BreadCrumb } from "@/components/BreadCrumb";
 import { MainWrapper } from "@/components/MainWrapper";
 import { H1 } from "@/components/typography/H1";
 import { H2 } from "@/components/typography/H2";
+import { PPLCrumbs } from "@/data/crumbs";
 import { chest, triceps, shoulders } from "@/data/sets";
 
 export default function PPLPush() {
@@ -8,6 +10,8 @@ export default function PPLPush() {
     <MainWrapper>
       <div>
         <H1 className="pb-8">Push</H1>
+
+        <BreadCrumb crumbs={PPLCrumbs} />
 
         <H2>Chest</H2>
 
