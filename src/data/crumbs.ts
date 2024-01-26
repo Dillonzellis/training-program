@@ -6,15 +6,15 @@ export interface CrumbType {
 export const PPLCrumbs = [
   {
     name: "Push",
-    href: "/",
+    href: "/ppl/push",
   },
   {
     name: "Pull",
-    href: "/",
+    href: "/ppl/pull",
   },
   {
     name: "Legs",
-    href: "/",
+    href: "/ppl/legs",
   },
 ];
 
