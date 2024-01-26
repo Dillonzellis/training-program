@@ -5,9 +5,12 @@ import type { CrumbType } from "@/data/crumbs";
 
 const Crumb = ({ name, href }: CrumbType) => {
   return (
-    <div className="text-sm font-medium leading-none">
-      <Link href={href}>{name}</Link>
-    </div>
+    <Link
+      className="underline-offset-4 hover:underline text-sm font-medium leading-none"
+      href={href}
+    >
+      {name}
+    </Link>
   );
 };
 
