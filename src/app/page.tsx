@@ -1,9 +1,10 @@
+import { MainWrapper } from "@/components/MainWrapper";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <MainWrapper>
       <div>
         <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl pb-6">
           Training Program
@@ -23,6 +24,6 @@ export default function Home() {
           </Button>
         </div>
       </div>
-    </main>
+    </MainWrapper>
   );
 }
