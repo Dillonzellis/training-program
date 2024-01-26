@@ -1,9 +1,9 @@
-import { chest, triceps, shoulders } from "@/data/sets";
 import { PPLCrumbs } from "@/data/crumbs";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { BreadCrumb } from "@/components/BreadCrumb";
 import { MainWrapper } from "@/components/MainWrapper";
+import { updateDate } from "@/data/globals";
 
 export default function PushPullLegs() {
   return (
@@ -13,7 +13,7 @@ export default function PushPullLegs() {
           Push/Pull/Legs
         </h1>
 
-        <p className="text-sm text-muted-foreground pb-8">1/26/24</p>
+        <p className="text-sm text-muted-foreground pb-8">{updateDate}</p>
 
         <BreadCrumb crumbs={PPLCrumbs} />
 
