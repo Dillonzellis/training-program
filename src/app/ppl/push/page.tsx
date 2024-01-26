@@ -1,36 +1,38 @@
 import { MainWrapper } from "@/components/MainWrapper";
+import { H1 } from "@/components/typography/H1";
+import { H2 } from "@/components/typography/H2";
 import { chest, triceps, shoulders } from "@/data/sets";
 
 export default function PPLPush() {
   return (
     <MainWrapper>
-      <h2 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight">
-        Push:
-      </h2>
+      <div>
+        <H1 className="pb-8">Push</H1>
 
-      <h3 className="text-lg font-semibold pt-8">Chest</h3>
+        <H2>Chest</H2>
 
-      <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-        {chest.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+          {chest.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
 
-      <h3 className="text-lg font-semibold pt-8">Triceps</h3>
+        <H2>Triceps</H2>
 
-      <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-        {triceps.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+          {triceps.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
 
-      <h3 className="text-lg font-semibold pt-8">Shoulders</h3>
+        <H2>Shoulders</H2>
 
-      <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-        {shoulders.map((item) => (
-          <li key={item}>{item}</li>
-        ))}
-      </ul>
+        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+          {shoulders.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+      </div>
     </MainWrapper>
   );
 }
