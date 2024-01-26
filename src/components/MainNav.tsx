@@ -1,12 +1,13 @@
 import Link from "next/link";
+import MaxWidthWrapper from "./MaxWidthWrapper";
 
 export default function MainNav() {
   return (
     <nav>
-      <div className="mx-auto w-full max-w-screen-xl px-2.5 md:px-20">
+      <MaxWidthWrapper>
         <div className="flex items-center justify-between gap-4 border-b pb-2 pt-3 text-sm font-normal">
-          <div className="flex items-center gap-8">
-            <Link className="pr-6 text-xl lg:pr-24 lg:text-2xl" href="/">
+          <div className="flex items-center lg:gap-8 gap-4">
+            <Link className="text-xl lg:pr-24 lg:text-2xl" href="/">
               Training Program
             </Link>
             <Link href="/ppl" className="hover:text-muted-foreground">
@@ -20,7 +21,7 @@ export default function MainNav() {
             </Link>
           </div>
         </div>
-      </div>
+      </MaxWidthWrapper>
     </nav>
   );
 }
