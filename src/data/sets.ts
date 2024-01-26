@@ -27,3 +27,13 @@ export const biceps = [
   "Single Arm Behind Back Cable Curl",
   "Front Cable Curl",
 ] as const;
+
+export const legs = [
+  "Hamstring Curl",
+  "Leg Extension",
+  "Leg Press",
+  "Standing Calf Raise",
+  "Seated Calf Raise",
+  "Hip Abductor",
+  "Hip Adductor",
+] as const;
