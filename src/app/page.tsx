@@ -22,7 +22,7 @@ export default function Home() {
             </Button>
 
             <Button asChild className="p-0" variant="link">
-              <Link href="/">Chest/Back/Arms/Legs</Link>
+              <Link href="/4-day-split">4 Day Split</Link>
             </Button>
           </div>
         </div>
