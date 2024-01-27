@@ -10,9 +10,8 @@ export default function FourDayLegs() {
   return (
     <MainWrapper>
       <MaxWidthWrapper>
-        <H1 className="pb-8">Legs</H1>
-
         <BreadCrumb crumbs={FourDayCrumbs} />
+        <H1 className="pb-8">Legs</H1>
 
         <H2>Warmup</H2>
 
