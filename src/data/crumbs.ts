@@ -21,18 +21,18 @@ export const PPLCrumbs = [
 export const FourDayCrumbs = [
   {
     name: "Chest",
-    href: "/",
+    href: "/4-day-split/chest",
   },
   {
-    name: "Chest",
-    href: "/",
+    name: "Back",
+    href: "/4-day-split/back",
   },
   {
-    name: "Chest",
-    href: "/",
+    name: "Arms",
+    href: "/4-day-split/arms",
   },
   {
-    name: "Chest",
-    href: "/",
+    name: "Legs",
+    href: "/4-day-split/legs",
   },
 ];
