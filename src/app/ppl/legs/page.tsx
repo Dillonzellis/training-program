@@ -20,7 +20,7 @@ export default function PPLLegs() {
           <li>3 Sets of Sleigh Push/Pulls</li>
         </ul>
 
-        <H2>Hamstring/Quads/Calfs/Accessories</H2>
+        <H2>Overall Legs</H2>
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {legs.map((item) => (
