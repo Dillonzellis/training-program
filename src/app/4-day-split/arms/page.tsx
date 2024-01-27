@@ -29,14 +29,6 @@ export default function FourDayChest() {
             <li key={item}>{item}</li>
           ))}
         </ul>
-
-        <H2>Shoulders</H2>
-
-        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          {shoulders.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
       </MaxWidthWrapper>
     </MainWrapper>
   );
