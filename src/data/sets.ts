@@ -10,7 +10,7 @@ export const shoulders = [
   "Shoulder Press",
   "Cable Lateral Raise",
   "Cable Face Pull",
-  "Underhand Cable Top Down",
+  "Underhand Band Top Down",
 ] as const;
 
 export const back = [
