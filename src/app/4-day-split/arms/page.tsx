@@ -4,7 +4,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { H1 } from "@/components/typography/H1";
 import { H2 } from "@/components/typography/H2";
 import { FourDayCrumbs } from "@/data/crumbs";
-import { biceps, shoulders, triceps } from "@/data/sets";
+import { biceps, triceps } from "@/data/sets";
 
 export default function FourDayChest() {
   return (
