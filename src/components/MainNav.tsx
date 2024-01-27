@@ -10,11 +10,11 @@ export default function MainNav() {
             <Link className="text-xl lg:pr-24 lg:text-2xl" href="/">
               Training Program
             </Link>
-            <Link href="/ppl" className="hover:text-muted-foreground">
-              Push/Pull/Legs
-            </Link>
             <Link href="/4-day-split" className="hover:text-muted-foreground">
               4 Day Split
+            </Link>
+            <Link href="/ppl" className="hover:text-muted-foreground">
+              Push/Pull/Legs
             </Link>
           </div>
         </div>
