@@ -13,10 +13,7 @@ export default function MainNav() {
             <Link href="/ppl" className="hover:text-muted-foreground">
               Push/Pull/Legs
             </Link>
-            <Link
-              href="/four-day-split"
-              className="hover:text-muted-foreground"
-            >
+            <Link href="/4-day-split" className="hover:text-muted-foreground">
               4 Day Split
             </Link>
           </div>
