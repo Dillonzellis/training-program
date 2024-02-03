@@ -5,6 +5,11 @@ import { H2 } from "@/components/typography/H2";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 
+//TODO: add auth
+//TODO: add waist tracker
+//TODO: add workout date tracker (checkbox of days)
+//TODO: add sets and weights
+
 export default function Home() {
   return (
     <MainWrapper>
