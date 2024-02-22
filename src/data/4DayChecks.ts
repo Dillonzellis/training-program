@@ -1,4 +1,9 @@
-export const fourDayChecks = [
+export type CheckType = {
+  id: string;
+  label: string;
+};
+
+export const fourDayChecks: CheckType[] = [
   {
     id: "chest",
     label: "Chest",
@@ -15,6 +20,4 @@ export const fourDayChecks = [
     id: "legs",
     label: "Legs",
   },
-] as const;
-
-export type FourDayCheckType = (typeof fourDayChecks)[number];
+];
