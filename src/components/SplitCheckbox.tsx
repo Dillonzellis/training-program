@@ -5,11 +5,16 @@ import { useLocalStorage } from "usehooks-ts";
 import { Checkbox } from "@/components/ui/checkbox";
 import { fourDayChecks } from "@/data/4DayChecks";
 import type { CheckType } from "@/data/4DayChecks";
+import { Button } from "./ui/button";
 
 interface CheckProps extends CheckType {
   onClick: (id: string) => void;
   checked: boolean;
 }
+
+// const clearChecks = () => {
+//   return <button onClick={() => setCheckedState({})}>Clear checks</button>;
+// };
 
 const Check = ({ id, label, onClick, checked }: CheckProps) => {
   return (
@@ -48,16 +53,25 @@ export const SplitCheckbox = () => {
     setCheckedState(initialState);
   }, []);
 
+  const handleClearChecks = () => {
+    setCheckedState({});
+  };
+
   return (
-    <div className="space-y-2">
-      {fourDayChecks.map((check) => (
-        <Check
-          onClick={handleCheck}
-          key={check.id}
-          checked={!!checkedState[check.id]}
-          {...check}
-        />
-      ))}
+    <div>
+      <div className="space-y-2 pb-8">
+        {fourDayChecks.map((check) => (
+          <Check
+            onClick={handleCheck}
+            key={check.id}
+            checked={!!checkedState[check.id]}
+            {...check}
+          />
+        ))}
+      </div>
+      <Button onClick={handleClearChecks} variant="outline">
+        Clear Checks
+      </Button>
     </div>
   );
 };
