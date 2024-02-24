@@ -13,9 +13,9 @@ export default function MainNav() {
             <Link href="/4-day-split" className="hover:text-muted-foreground">
               4 Day Split
             </Link>
-            <Link href="/ppl" className="hover:text-muted-foreground">
-              Push/Pull/Legs
-            </Link>
+            {/* <Link href="/ppl" className="hover:text-muted-foreground"> */}
+            {/*   Push/Pull/Legs */}
+            {/* </Link> */}
           </div>
         </div>
       </MaxWidthWrapper>
