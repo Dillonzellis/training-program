@@ -17,6 +17,7 @@ export const back = [
   "Lat Pulldown",
   "Mid Row",
   "High Row",
+  "Low Row",
   "Pull Over",
   "Single Arm Pull Over",
 ] as const;
