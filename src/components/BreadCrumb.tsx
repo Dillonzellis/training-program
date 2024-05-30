@@ -20,11 +20,13 @@ interface BreadCrumbProps {
 
 export const BreadCrumb = ({ crumbs }: BreadCrumbProps) => {
   return (
-    <div className="flex gap-2 items-center pb-8">
+    <div className="flex md:flex-row flex-col md:gap-2 gap-4 md:items-center pb-8">
       {crumbs.map((item, idx) => (
         <React.Fragment key={idx}>
           <Crumb name={item.name} href={item.href} />
-          {idx !== crumbs.length - 1 && <span>|</span>}
+          {idx !== crumbs.length - 1 && (
+            <span className="hidden md:block">|</span>
+          )}
         </React.Fragment>
       ))}
     </div>
