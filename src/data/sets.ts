@@ -1,3 +1,18 @@
+export const wSplMondayChest = [
+  "Incline Smith Press 3x 8-12",
+  "Machine Chest Press 3x 12-15",
+] as const;
+
+export const wSplMondayBack = [
+  "Weighted Pull Up 2x 8-12 + 1 backdown set asssisted",
+  "T bar Row 3x 12-15",
+] as const;
+
+export const wSplMondayShoulders = [
+  "Full rom laterals 3 X 10 -20 myo match",
+  "Cable y raise 3 X 10 - 20 myo match",
+] as const;
+
 export const chest = [
   "Incline Bench Press",
   "Flat Bench Press",
