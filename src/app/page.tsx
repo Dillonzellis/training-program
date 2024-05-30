@@ -25,8 +25,8 @@ export default function Home() {
             {/* <Button asChild className="p-0" variant="link"> */}
             {/*   <Link href="/4-day-split">4 Day Split</Link> */}
             {/* </Button> */}
-            {splits.map((split) => (
-              <Button asChild className="p-0" variant="link">
+            {splits.map((split, idx) => (
+              <Button key={idx} asChild className="p-0" variant="link">
                 <Link href={split.href}>{split.name}</Link>
               </Button>
             ))}
