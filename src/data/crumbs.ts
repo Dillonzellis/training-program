@@ -3,6 +3,29 @@ export interface CrumbType {
   href: string;
 }
 
+export const willSplitCrumbs = [
+  {
+    name: "Monday (Upper)",
+    href: "/will-split/monday",
+  },
+  {
+    name: "Tuesday (Lower)",
+    href: "/will-split/tuesday",
+  },
+  {
+    name: "Wednesday (Upper)",
+    href: "/will-split/wednesday",
+  },
+  {
+    name: "Thursday (Lower)",
+    href: "/will-split/thursday",
+  },
+  {
+    name: "Friday (Upper)",
+    href: "/will-split/friday",
+  },
+];
+
 export const PPLCrumbs = [
   {
     name: "Push",
