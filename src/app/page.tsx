@@ -5,9 +5,9 @@ import { H2 } from "@/components/typography/H2";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { splits } from "@/data/splits";
+import { updateDate } from "@/data/globals";
 
 //TODO: add auth
-//TODO: add waist tracker
 //TODO: add workout date tracker (checkbox of days)
 //TODO: add sets and weights
 //TODO: add V program
@@ -18,7 +18,7 @@ export default function Home() {
       <MaxWidthWrapper>
         <div>
           <H1 className="pb-6">Training Program</H1>
-          <p className="text-sm text-muted-foreground pb-16">1/26/24</p>
+          <p className="text-sm text-muted-foreground pb-16">{updateDate}</p>
           <H2>Splits:</H2>
 
           <div className="flex flex-col justify-start items-start">
