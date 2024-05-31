@@ -10,6 +10,11 @@ export default function MainNav() {
             <Link className="text-xl lg:pr-24 lg:text-2xl" href="/">
               Training Program
             </Link>
+
+            <Link href="/will-split" className="hover:text-muted-foreground">
+              5 Day Split
+            </Link>
+
             <Link href="/4-day-split" className="hover:text-muted-foreground">
               4 Day Split
             </Link>
