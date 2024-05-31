@@ -26,30 +26,45 @@ export const wSplTuesdayBiceps = [
 ] as const;
 
 export const wSplWednesdayChest = [
-"Flat smith press 3X10-12",
-"Weighted dips 2X10-12",
+  "Flat smith press 3X10-12",
+  "Weighted dips 2X10-12",
 ] as const;
 
 export const wSplWednesdayBack = [
-"Seal Row 3x 12-15",
-"Neutral grip pulldown 3X10-20 myo match",
+  "Seal Row 3x 12-15",
+  "Neutral grip pulldown 3X10-20 myo match",
 ] as const;
 
 export const wSplWednesdayShoulders = [
-"45 degree laterals to upright row 3X10-20 myo match",
-"Face pulls 3- 4X 15-20",
+  "45 degree laterals to upright row 3X10-20 myo match",
+  "Face pulls 3- 4X 15-20",
 ] as const;
 
 export const wSplThursdayLegs = [
-"Seated hamstring curl 3X10-20 myo match",
-"Leg press 3X8-10",
-"Smith squat 2X8-12",
+  "Seated hamstring curl 3X10-20 myo match",
+  "Leg press 3X8-10",
+  "Smith squat 2X8-12",
 ] as const;
 
 export const wSplThursdayArms = [
-"EZ bar curl 3X10-20 myo match",
-"Tricep pushdown 3X10-20 myo match",
-"Incline curl 3X12-15",
+  "EZ bar curl 3X10-20 myo match",
+  "Incline curl 3X12-15",
+  "Tricep pushdown 3X10-20 myo match",
+] as const;
+
+export const wSplFridayChest = [
+  "Pec Deck 3x12-15",
+  "Machine Chest Press 3x12-15",
+] as const;
+
+export const wSplFridayBack = [
+  "Cable Row 3x12-15",
+  "Close Grip Pulldown 3x10-12",
+] as const;
+
+export const wSplFridayShoulders = [
+  "Cable Laterals 3x12-15",
+  "Machine Laterals 3x12-15",
 ] as const;
 
 export const chest = [
