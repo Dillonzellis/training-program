@@ -3,26 +3,26 @@ export interface CrumbType {
   href: string;
 }
 
-export const willSplitCrumbs = [
+export const FiveDaySplitCrumbs = [
   {
-    name: "Monday (Upper)",
-    href: "/will-split/monday",
+    name: "Day 1 (Upper)",
+    href: "/5-day-split/day-1",
   },
   {
-    name: "Tuesday (Lower)",
-    href: "/will-split/tuesday",
+    name: "Day 2 (Lower)",
+    href: "/5-day-split/day-2",
   },
   {
-    name: "Wednesday (Upper)",
-    href: "/will-split/wednesday",
+    name: "Day 3 (Upper)",
+    href: "/5-day-split/day-3",
   },
   {
-    name: "Thursday (Lower)",
-    href: "/will-split/thursday",
+    name: "Day 4 (Lower)",
+    href: "/5-day-split/day-4",
   },
   {
-    name: "Friday (Upper)",
-    href: "/will-split/friday",
+    name: "Day 5 (Upper)",
+    href: "/5-day-split/day-5",
   },
 ];
 

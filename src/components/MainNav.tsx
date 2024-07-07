@@ -11,7 +11,7 @@ export default function MainNav() {
               Training Program
             </Link>
 
-            <Link href="/will-split" className="hover:text-muted-foreground">
+            <Link href="/5-day-split" className="hover:text-muted-foreground">
               5 Day Split
             </Link>
 
