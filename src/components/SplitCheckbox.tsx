@@ -3,7 +3,6 @@
 import { useEffect } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import { Checkbox } from "@/components/ui/checkbox";
-import { fourDayChecks } from "@/data/4DayChecks";
 import type { CheckType } from "@/data/4DayChecks";
 import { Button } from "./ui/button";
 
@@ -11,10 +10,6 @@ interface CheckProps extends CheckType {
   onClick: (id: string) => void;
   checked: boolean;
 }
-
-// const clearChecks = () => {
-//   return <button onClick={() => setCheckedState({})}>Clear checks</button>;
-// };
 
 const Check = ({ id, label, onClick, checked }: CheckProps) => {
   return (
@@ -30,7 +25,11 @@ const Check = ({ id, label, onClick, checked }: CheckProps) => {
   );
 };
 
-export const SplitCheckbox = () => {
+interface SplitCheckboxProps {
+  splitChecks: CheckType[];
+}
+
+export const SplitCheckbox = ({ splitChecks }: SplitCheckboxProps) => {
   const [checkedState, setCheckedState] = useLocalStorage<{
     [key: string]: boolean;
   }>("checkboxState", {});
@@ -43,7 +42,7 @@ export const SplitCheckbox = () => {
   };
 
   useEffect(() => {
-    const initialState = fourDayChecks.reduce((acc, check) => {
+    const initialState = splitChecks.reduce((acc, check) => {
       if (acc[check.id] === undefined) {
         acc[check.id] = false;
       }
@@ -60,7 +59,7 @@ export const SplitCheckbox = () => {
   return (
     <div>
       <div className="space-y-2 pb-8">
-        {fourDayChecks.map((check) => (
+        {splitChecks.map((check) => (
           <Check
             onClick={handleCheck}
             key={check.id}
