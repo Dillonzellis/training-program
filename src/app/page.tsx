@@ -4,7 +4,7 @@ import { H1 } from "@/components/typography/H1";
 import { H2 } from "@/components/typography/H2";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { splits } from "@/data/splits";
+// import { splits } from "@/data/splits";
 import { updateDate } from "@/data/globals";
 
 //TODO: add auth
@@ -22,18 +22,14 @@ export default function Home() {
           <H2>Splits:</H2>
 
           <div className="flex flex-col justify-start items-start">
-            {/* <Button asChild className="p-0" variant="link"> */}
-            {/*   <Link href="/4-day-split">4 Day Split</Link> */}
-            {/* </Button> */}
-            {splits.map((split, idx) => (
-              <Button key={idx} asChild className="p-0" variant="link">
-                <Link href={split.href}>{split.name}</Link>
-              </Button>
-            ))}
-
-            {/* <Button asChild className="p-0" variant="link"> */}
-            {/*   <Link href="/ppl">Push/Pull/Legs</Link> */}
-            {/* </Button> */}
+            <Button asChild className="p-0" variant="link">
+              <Link href="/4-day-split-v2">4 Day Split V2</Link>
+            </Button>
+            {/* {splits.map((split, idx) => ( */}
+            {/*   <Button key={idx} asChild className="p-0" variant="link"> */}
+            {/*     <Link href={split.href}>{split.name}</Link> */}
+            {/*   </Button> */}
+            {/* ))} */}
           </div>
         </div>
       </MaxWidthWrapper>
