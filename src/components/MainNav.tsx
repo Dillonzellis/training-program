@@ -1,5 +1,6 @@
 import Link from "next/link";
 import MaxWidthWrapper from "./MaxWidthWrapper";
+import { splits } from "@/data/splits";
 
 export default function MainNav() {
   return (
@@ -11,16 +12,11 @@ export default function MainNav() {
               Training Program
             </Link>
 
-            <Link href="/5-day-split" className="hover:text-muted-foreground">
-              5 Day Split
-            </Link>
-
-            <Link href="/4-day-split" className="hover:text-muted-foreground">
-              4 Day Split
-            </Link>
-            {/* <Link href="/ppl" className="hover:text-muted-foreground"> */}
-            {/*   Push/Pull/Legs */}
-            {/* </Link> */}
+            {splits.map((split, idx) => (
+              <Link key={idx} href={split.href}>
+                {split.name}
+              </Link>
+            ))}
           </div>
         </div>
       </MaxWidthWrapper>
