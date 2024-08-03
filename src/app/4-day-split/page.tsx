@@ -4,7 +4,7 @@ import { MainWrapper } from "@/components/MainWrapper";
 import { updateDate } from "@/data/globals";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { SplitCheckbox } from "@/components/SplitCheckbox";
-import { fourDayChecks } from "@/data/4DayChecks";
+import { fourDayChecks } from "@/data/checks";
 
 export default function FourDaySplit() {
   return (
