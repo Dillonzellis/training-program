@@ -1,6 +1,7 @@
 import { BreadCrumb } from "@/components/BreadCrumb";
 import { MainWrapper } from "@/components/MainWrapper";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
+import { H1 } from "@/components/typography/H1";
 import { FourDayV2Crumbs } from "@/data/crumbs";
 import { backB } from "@/data/sets";
 
@@ -10,9 +11,7 @@ export default function FourDayBack() {
       <MaxWidthWrapper>
         <BreadCrumb crumbs={FourDayV2Crumbs} />
 
-        <h1 className="scroll-m-20 border-b pb-2 text-3xl font-semibold tracking-tight first:mt-0 max-w-sm">
-          Back B
-        </h1>
+        <H1 className="pb-8">Back B</H1>
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {backB.map((item) => (
