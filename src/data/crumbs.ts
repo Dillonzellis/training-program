@@ -59,3 +59,38 @@ export const FourDayCrumbs = [
     href: "/4-day-split/legs",
   },
 ];
+
+export const FourDayV2Crumbs = [
+  {
+    name: "Chest-A",
+    href: "/4-day-split-v2/chest/a",
+  },
+  {
+    name: "Back-A",
+    href: "/4-day-split-v2/back/a",
+  },
+  {
+    name: "Arms-A",
+    href: "/4-day-split-v2/arms/a",
+  },
+  {
+    name: "Legs-A",
+    href: "/4-day-split-v2/legs/a",
+  },
+  {
+    name: "Chest-B",
+    href: "/4-day-split-v2/chest/b",
+  },
+  {
+    name: "Back-B",
+    href: "/4-day-split-v2/back/b",
+  },
+  {
+    name: "Arms-B",
+    href: "/4-day-split-v2/arms/b",
+  },
+  {
+    name: "Legs-B",
+    href: "/4-day-split-v2/legs/b",
+  },
+];

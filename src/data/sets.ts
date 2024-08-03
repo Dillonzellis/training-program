@@ -125,3 +125,84 @@ export const legs = [
   "Hip Abductor",
   "Hip Adductor",
 ] as const;
+
+// 4 Day Split V2
+export const tricepsA = [
+  "Cable Pushdowns 3x",
+  "Skull Crushers 3x",
+  "Dips (tricep focus) 2x",
+] as const;
+
+export const tricepsB = [
+  "Cable Pushdowns 3x",
+  "Dips (tricep focus) 3x",
+  "Smithy Skull Crushers 2x",
+] as const;
+
+export const bicepsA = [
+  "Alt Bicep Curl 3x",
+  "Machine Incline Curl 3x",
+  "Hammer Curl 2x",
+] as const;
+
+export const bicepsB = [
+  "Behind Back Cable Curls 3x",
+  "Front Cable Curl (w/Bar) 3x",
+  "EZ Bar Curl 2x",
+] as const;
+
+export const backA = [
+  "Assisted Pull Up 2x",
+  "Machine Seated Row (Low) 2x",
+  "Lat Pulldown Close Grip 2x",
+  "Cable Pull Over 2x",
+] as const;
+
+export const backB = [
+  "Lat Pull Down 2x",
+  "High Row Machine 2x",
+  "D Handle Row (mid-high) 2x",
+  "Cable Pull Over 2x",
+] as const;
+
+export const chestA = [
+  "Incline Bench Press 3x",
+  "Machine Chest Press 3x",
+  "Pec Deck 2x",
+] as const;
+
+export const chestB = [
+  "Incline Dumbbell Press 3x",
+  "Dips (chest focused) 3x",
+  "Cable Crossovers 2x",
+] as const;
+
+export const shouldersA = [
+  "Cable Laterals 3x",
+  "Upright Row 2x",
+  "Cutler Rear Delt 3x",
+] as const;
+
+export const shouldersB = [
+  "Shoulder Press 3x",
+  "Machine Laterals 3x",
+  "Face Pulls 2x",
+] as const;
+
+export const legsA = [
+  "Sleds 3x",
+  "Seated Hamstring Curl 3x",
+  "Leg Extension 3x",
+  "Standing Calf Raise 3x",
+  "Hip Abductor 2x",
+  "Hip Adductor 2x",
+] as const;
+
+export const legsB = [
+  "Sleds 3x",
+  "Seated Hamstring Curl 3x",
+  "Leg Extension 3x",
+  "Leg Press 3x",
+  "Standing Calf Raise 3x",
+  "Smith Squat 3x",
+] as const;
