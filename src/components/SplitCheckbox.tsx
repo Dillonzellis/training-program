@@ -3,7 +3,7 @@
 import { useEffect } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import { Checkbox } from "@/components/ui/checkbox";
-import type { CheckType } from "@/data/4DayChecks";
+import type { CheckType } from "@/data/checks";
 import { Button } from "./ui/button";
 
 interface CheckProps extends CheckType {
@@ -58,7 +58,7 @@ export const SplitCheckbox = ({ splitChecks }: SplitCheckboxProps) => {
 
   return (
     <div>
-      <div className="space-y-2 pb-8">
+      <div className="space-y-4 pb-8">
         {splitChecks.map((check) => (
           <Check
             onClick={handleCheck}
