@@ -4,6 +4,7 @@ import { MainWrapper } from "@/components/MainWrapper";
 import { updateDate } from "@/data/globals";
 import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { SplitCheckbox } from "@/components/SplitCheckbox";
+import { fourDayChecks } from "@/data/4DayChecks";
 
 export default function FourDaySplit() {
   return (
@@ -18,7 +19,7 @@ export default function FourDaySplit() {
 
           <BreadCrumb crumbs={FourDayCrumbs} />
           <h2 className="text-2xl font-bold pb-4">Current Day</h2>
-          <SplitCheckbox />
+          <SplitCheckbox splitChecks={fourDayChecks} />
         </div>
       </MaxWidthWrapper>
     </MainWrapper>
