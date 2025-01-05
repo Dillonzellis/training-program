@@ -28,16 +28,28 @@ export const FiveDaySplitCrumbs = [
 
 export const PPLCrumbs = [
   {
-    name: "Push",
-    href: "/ppl/push",
+    name: "Push A",
+    href: "/ppl/push-a",
   },
   {
-    name: "Pull",
-    href: "/ppl/pull",
+    name: "Pull A",
+    href: "/ppl/pull-a",
   },
   {
-    name: "Legs",
-    href: "/ppl/legs",
+    name: "Legs A",
+    href: "/ppl/legs-a",
+  },
+  {
+    name: "Push B",
+    href: "/ppl/push-b",
+  },
+  {
+    name: "Pull B",
+    href: "/ppl/pull-b",
+  },
+  {
+    name: "Legs B",
+    href: "/ppl/legs-b",
   },
 ];
 

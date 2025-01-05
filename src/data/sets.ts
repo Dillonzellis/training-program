@@ -159,10 +159,9 @@ export const backA = [
 ] as const;
 
 export const backB = [
-  "Lat Pull Down 2x",
-  "High Row Machine 2x",
-  "D Handle Row (mid-high) 2x",
-  "Cable Pull Over 2x",
+  "Lat Pull Down 3x",
+  "Cable Row Machine 3x",
+  "Cable Pull Over 3x",
 ] as const;
 
 export const chestA = [
@@ -179,7 +178,7 @@ export const chestB = [
 
 export const shouldersA = [
   "Cable Laterals 3x",
-  "Upright Row 2x",
+  "Shoulder Press 3x",
   "Cutler Rear Delt 3x",
 ] as const;
 
@@ -194,6 +193,7 @@ export const legsA = [
   "Seated Hamstring Curl 3x",
   "Leg Extension 3x",
   "Standing Calf Raise 3x",
+  "Leg Press 3x",
   "Hip Abductor 2x",
   "Hip Adductor 2x",
 ] as const;
@@ -202,7 +202,6 @@ export const legsB = [
   "Sleds 3x",
   "Seated Hamstring Curl 3x",
   "Leg Extension 3x",
-  "Leg Press 3x",
   "Standing Calf Raise 3x",
   "Smith Squat 3x",
 ] as const;

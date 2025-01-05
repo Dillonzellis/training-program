@@ -56,3 +56,30 @@ export const fourDayChecksV2: CheckType[] = [
     label: "Legs-B",
   },
 ];
+
+export const pplChecks: CheckType[] = [
+  {
+    id: "push-a",
+    label: "Push A",
+  },
+  {
+    id: "pull-a",
+    label: "Pull A",
+  },
+  {
+    id: "legs-a",
+    label: "Legs A",
+  },
+  {
+    id: "push-b",
+    label: "Push B",
+  },
+  {
+    id: "pull-b",
+    label: "Pull B",
+  },
+  {
+    id: "legs-b",
+    label: "Legs B",
+  },
+];

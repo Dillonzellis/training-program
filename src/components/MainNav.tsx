@@ -12,6 +12,7 @@ export default function MainNav() {
               Training Program
             </Link>
 
+            <Link href="/ppl">PPL</Link>
             <Link href="/4-day-split-v2">4 Day Split V2</Link>
 
             {/* {splits.map((split, idx) => ( */}
