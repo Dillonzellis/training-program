@@ -68,7 +68,7 @@ export const pplChecks: CheckType[] = [
   },
   {
     id: "legs-a",
-    label: "Legs A",
+    label: "Legs",
   },
   {
     id: "push-b",
@@ -80,6 +80,6 @@ export const pplChecks: CheckType[] = [
   },
   {
     id: "legs-b",
-    label: "Legs B",
+    label: "Legs",
   },
 ];

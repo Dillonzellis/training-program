@@ -14,18 +14,18 @@ export default function PPLPush() {
 
         <BreadCrumb crumbs={PPLCrumbs} />
 
-        <H2>Triceps B</H2>
-
-        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          {tricepsB.map((item) => (
-            <li key={item}>{item}</li>
-          ))}
-        </ul>
-
         <H2>Chest B</H2>
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {chestB.map((item) => (
+            <li key={item}>{item}</li>
+          ))}
+        </ul>
+
+        <H2>Triceps B</H2>
+
+        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
+          {tricepsB.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>

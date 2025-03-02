@@ -128,50 +128,45 @@ export const legs = [
 
 // 4 Day Split V2
 export const tricepsA = [
-  "Cable Pushdowns 3x",
-  "Skull Crushers 3x",
+  "Cable Pushdowns 4x(+dropset)",
+  "Skull Crushers 4x",
+  "Kick Backs 3x",
   "Dips (tricep focus) 2x",
 ] as const;
 
-export const tricepsB = [
-  "Cable Pushdowns 3x",
-  "Dips (tricep focus) 3x",
-  "Smithy Skull Crushers 2x",
-] as const;
+export const tricepsB = ["Skull Crushers 3x", "Cable Pushdowns 3x"] as const;
 
 export const bicepsA = [
   "Alt Bicep Curl 3x",
   "Machine Incline Curl 3x",
-  "Hammer Curl 2x",
 ] as const;
 
 export const bicepsB = [
-  "Behind Back Cable Curls 3x",
+  "Alt Db Curls 3x",
+  "EZ Bar Curl 3x",
+  "Bayesian Curl 3x",
   "Front Cable Curl (w/Bar) 3x",
-  "EZ Bar Curl 2x",
 ] as const;
 
 export const backA = [
-  "Assisted Pull Up 2x",
-  "Machine Seated Row (Low) 2x",
-  "Lat Pulldown Close Grip 2x",
-  "Cable Pull Over 2x",
+  "Lat Pulldown Close Grip 4x",
+  "Cable Low Rows 3x",
+  "Machine Seated High Row 3x",
+  "Assisted Pull Up 3x",
+  "Cable Pull Over 3x",
+  "Shrugs 3x",
 ] as const;
 
-export const backB = [
-  "Lat Pull Down 3x",
-  "Cable Row Machine 3x",
-  "Cable Pull Over 3x",
-] as const;
+export const backB = ["Lat Pull Down 3x", "Cable Pull Over 3x"] as const;
 
 export const chestA = [
   "Incline Bench Press 3x",
   "Machine Chest Press 3x",
-  "Pec Deck 2x",
 ] as const;
 
 export const chestB = [
   "Incline Dumbbell Press 3x",
+  "Machine Chest Press 3x",
   "Dips (chest focused) 3x",
   "Cable Crossovers 2x",
 ] as const;
@@ -190,7 +185,7 @@ export const shouldersB = [
 
 export const legsA = [
   "Sleds 3x",
-  "Seated Hamstring Curl 3x",
+  "RDLs 3x",
   "Leg Extension 3x",
   "Standing Calf Raise 3x",
   "Leg Press 3x",

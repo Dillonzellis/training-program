@@ -14,13 +14,7 @@ export default function PPLLegs() {
 
         <BreadCrumb crumbs={PPLCrumbs} />
 
-        <H2>Warmup</H2>
-
-        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          <li>3 Sets of Sleigh Push/Pulls</li>
-        </ul>
-
-        <H2>Legs A</H2>
+        <H2>Legs</H2>
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {legsA.map((item) => (

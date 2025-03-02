@@ -4,7 +4,7 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { H1 } from "@/components/typography/H1";
 import { H2 } from "@/components/typography/H2";
 import { PPLCrumbs } from "@/data/crumbs";
-import { legsB } from "@/data/sets";
+import { legsA } from "@/data/sets";
 
 export default function PPLLegs() {
   return (
@@ -14,16 +14,10 @@ export default function PPLLegs() {
 
         <BreadCrumb crumbs={PPLCrumbs} />
 
-        <H2>Warmup</H2>
+        <H2>Legs</H2>
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          <li>3 Sets of Sleigh Push/Pulls</li>
-        </ul>
-
-        <H2>Legs B</H2>
-
-        <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
-          {legsB.map((item) => (
+          {legsA.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ul>
