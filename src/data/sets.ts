@@ -128,36 +128,33 @@ export const legs = [
 
 // 4 Day Split V2
 export const tricepsA = [
-  "Cable Pushdowns 4x(+dropset)",
-  "Skull Crushers 4x",
+  "Cable Pushdowns 3x",
+  "Skull Crushers 3x",
   "Kick Backs 3x",
-  "Dips (tricep focus) 2x",
+  "Across Chest Side extends 2x",
 ] as const;
 
 export const tricepsB = ["Skull Crushers 3x", "Cable Pushdowns 3x"] as const;
 
-export const bicepsA = [
-  "Alt Bicep Curl 3x",
-  "Machine Incline Curl 3x",
-] as const;
+export const bicepsA = ["Alt Bicep Curl 3x", "Bar Curls 3x"] as const;
 
 export const bicepsB = [
   "Alt Db Curls 3x",
-  "EZ Bar Curl 3x",
+  "Bar Curl 3x",
   "Bayesian Curl 3x",
   "Front Cable Curl (w/Bar) 3x",
 ] as const;
 
 export const backA = [
-  "Lat Pulldown Close Grip 4x",
+  "Lat Pulldown Close Grip 3x",
   "Cable Low Rows 3x",
   "Machine Seated High Row 3x",
-  "Assisted Pull Up 3x",
+  "Pull down machine 3x",
   "Cable Pull Over 3x",
   "Shrugs 3x",
 ] as const;
 
-export const backB = ["Lat Pull Down 3x", "Cable Pull Over 3x"] as const;
+export const backB = ["Lat Pull Down 3x", "Cable Rows 3x"] as const;
 
 export const chestA = [
   "Incline Bench Press 3x",
@@ -168,35 +165,39 @@ export const chestB = [
   "Incline Dumbbell Press 3x",
   "Machine Chest Press 3x",
   "Dips (chest focused) 3x",
-  "Cable Crossovers 2x",
+  "Cable Crossovers/Flys 2x",
 ] as const;
 
 export const shouldersA = [
-  "Cable Laterals 3x",
-  "Shoulder Press 3x",
+  "BB Shoulder Press 3x",
+  "Machine Shoulder Press 3x",
   "Cutler Rear Delt 3x",
 ] as const;
 
 export const shouldersB = [
-  "Shoulder Press 3x",
+  "DB Laterals 3x",
   "Machine Laterals 3x",
-  "Face Pulls 2x",
+  "Reverse Flys 3x",
 ] as const;
 
 export const legsA = [
   "Sleds 3x",
-  "RDLs 3x",
   "Leg Extension 3x",
+  "hamstring curls 2x",
   "Standing Calf Raise 3x",
-  "Leg Press 3x",
   "Hip Abductor 2x",
   "Hip Adductor 2x",
+  "Smith Squat 3x",
+  "Leg Extension 3x",
 ] as const;
 
 export const legsB = [
   "Sleds 3x",
   "Seated Hamstring Curl 3x",
   "Leg Extension 3x",
+  "Lying Hamstring Curl 3x",
+  "RDLs 3x",
   "Standing Calf Raise 3x",
-  "Smith Squat 3x",
+  "Seated Calf Raise 2x",
+  "Bulgarian Split Squad 3x",
 ] as const;

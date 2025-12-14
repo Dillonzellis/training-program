@@ -36,7 +36,7 @@ export const PPLCrumbs = [
     href: "/ppl/pull-a",
   },
   {
-    name: "Legs",
+    name: "Legs A",
     href: "/ppl/legs-a",
   },
   {
@@ -48,7 +48,7 @@ export const PPLCrumbs = [
     href: "/ppl/pull-b",
   },
   {
-    name: "Legs",
+    name: "Legs B",
     href: "/ppl/legs-b",
   },
 ];

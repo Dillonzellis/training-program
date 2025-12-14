@@ -10,11 +10,11 @@ export default function PPLLegs() {
   return (
     <MainWrapper>
       <MaxWidthWrapper>
-        <H1 className="pb-8">Legs</H1>
+        <H1 className="pb-8">Legs A</H1>
 
         <BreadCrumb crumbs={PPLCrumbs} />
 
-        <H2>Legs</H2>
+        <H2>Legs A(quad focused)</H2>
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {legsA.map((item) => (
