@@ -15,12 +15,12 @@ const Check = ({ id, label, onClick, checked }: CheckProps) => {
   return (
     <div className="flex items-center space-x-2" onClick={() => onClick(id)}>
       <Checkbox id={id} checked={checked} />
-      <label
-        htmlFor={id}
+      <a
+        href={`/ppl/${id}`}
         className="text-base font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
       >
         {label}
-      </label>
+      </a>
     </div>
   );
 };

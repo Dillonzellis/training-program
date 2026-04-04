@@ -15,7 +15,7 @@ export default function FourDayBack() {
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {backA.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item.name}>{item.name}</li>
           ))}
         </ul>
       </MaxWidthWrapper>

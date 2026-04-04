@@ -22,9 +22,6 @@ export default function Home() {
           <H2>Splits:</H2>
 
           <div className="flex flex-col justify-start items-start">
-            {/* <Button asChild className="p-0" variant="link"> */}
-            {/*   <Link href="/4-day-split-v2">4 Day Split V2</Link> */}
-            {/* </Button> */}
             {splits.map((split, idx) => (
               <Button key={idx} asChild className="p-0" variant="link">
                 <Link href={split.href}>{split.name}</Link>

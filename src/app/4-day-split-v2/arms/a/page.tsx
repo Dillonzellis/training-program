@@ -18,7 +18,7 @@ export default function FourDayChest() {
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {tricepsA.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item.name}>{item.name}</li>
           ))}
         </ul>
 
@@ -26,7 +26,7 @@ export default function FourDayChest() {
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {bicepsA.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item.name}>{item.name}</li>
           ))}
         </ul>
       </MaxWidthWrapper>

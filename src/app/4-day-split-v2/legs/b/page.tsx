@@ -14,7 +14,7 @@ export default function FourDayLegs() {
 
         <ul className="my-6 ml-6 list-disc [&>li]:mt-2">
           {legsB.map((item) => (
-            <li key={item}>{item}</li>
+            <li key={item.name}>{item.name}</li>
           ))}
         </ul>
       </MaxWidthWrapper>

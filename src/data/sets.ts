@@ -126,78 +126,96 @@ export const legs = [
   "Hip Adductor",
 ] as const;
 
+export type Exercise = {
+  name: string;
+  sets: number;
+};
+
 // 4 Day Split V2
-export const tricepsA = [
-  "Cable Pushdowns 3x",
-  "Skull Crushers 3x",
-  "Kick Backs 3x",
-  "Across Chest Side extends 2x",
-] as const;
+export const tricepsA: Exercise[] = [
+  { name: "Cable Pushdowns", sets: 3 },
+  { name: "Skull Crushers", sets: 3 },
+  { name: "Kick Backs", sets: 3 },
+  { name: "Across Chest Side extends", sets: 2 },
+];
 
-export const tricepsB = ["Skull Crushers 3x", "Cable Pushdowns 3x"] as const;
+export const tricepsB: Exercise[] = [
+  { name: "Skull Crushers", sets: 3 },
+  { name: "Cable Pushdowns", sets: 3 },
+];
 
-export const bicepsA = ["Alt Bicep Curl 3x", "Bar Curls 3x"] as const;
+export const bicepsA: Exercise[] = [
+  { name: "Alt Bicep Curl", sets: 3 },
+  { name: "Bar Curls", sets: 3 },
+];
 
-export const bicepsB = [
-  "Alt Db Curls 3x",
-  "Bar Curl 3x",
-  "Bayesian Curl 3x",
-  "Front Cable Curl (w/Bar) 3x",
-] as const;
+export const bicepsB: Exercise[] = [
+  { name: "Alt Db Curls", sets: 3 },
+  { name: "Bar Curl", sets: 3 },
+  { name: "Bayesian Curl", sets: 3 },
+  { name: "Front Cable Curl (w/Bar)", sets: 3 },
+  { name: "Wrist curls", sets: 3 },
+  { name: "Reverse Wrist curls", sets: 3 },
+];
 
-export const backA = [
-  "Lat Pulldown Close Grip 3x",
-  "Cable Low Rows 3x",
-  "Machine Seated High Row 3x",
-  "Pull down machine 3x",
-  "Cable Pull Over 3x",
-  "Shrugs 3x",
-] as const;
+export const backA: Exercise[] = [
+  { name: "Lat Pulldown Close Grip", sets: 3 },
+  { name: "Cable Low Rows", sets: 3 },
+  { name: "Machine Seated High Row", sets: 3 },
+  { name: "Pull down machine", sets: 3 },
+  { name: "Cable Pull Over", sets: 3 },
+  { name: "Machine Back Ext", sets: 3 },
+  { name: "Shrugs", sets: 3 },
+];
 
-export const backB = ["Lat Pull Down 3x", "Cable Rows 3x"] as const;
+export const backB: Exercise[] = [
+  { name: "Lat Pull Down", sets: 3 },
+  { name: "Cable Rows", sets: 3 },
+  { name: "Machine Back Ext", sets: 3 },
+];
 
-export const chestA = [
-  "Incline Bench Press 3x",
-  "Machine Chest Press 3x",
-] as const;
+export const chestA: Exercise[] = [
+  { name: "Incline DB Press", sets: 3 },
+  { name: "Machine Chest Press", sets: 3 },
+];
 
-export const chestB = [
-  "Incline Dumbbell Press 3x",
-  "Machine Chest Press 3x",
-  "Dips (chest focused) 3x",
-  "Cable Crossovers/Flys 2x",
-] as const;
+export const chestB: Exercise[] = [
+  { name: "Incline Dumbbell Press", sets: 3 },
+  { name: "Machine Chest Press", sets: 3 },
+  { name: "Dips (chest focused)", sets: 3 },
+  { name: "Cable Crossovers/Flys", sets: 2 },
+];
 
-export const shouldersA = [
-  "BB Shoulder Press 3x",
-  "Machine Shoulder Press 3x",
-  "Cutler Rear Delt 3x",
-] as const;
+export const shouldersA: Exercise[] = [
+  { name: "BB Shoulder Press", sets: 3 },
+  { name: "Machine Shoulder Press", sets: 3 },
+  { name: "Cutler Rear Delt", sets: 3 },
+];
 
-export const shouldersB = [
-  "DB Laterals 3x",
-  "Machine Laterals 3x",
-  "Reverse Flys 3x",
-] as const;
+export const shouldersB: Exercise[] = [
+  { name: "DB Laterals", sets: 3 },
+  { name: "Machine Laterals", sets: 3 },
+  { name: "Reverse Flys", sets: 3 },
+];
 
-export const legsA = [
-  "Sleds 3x",
-  "Leg Extension 3x",
-  "hamstring curls 2x",
-  "Standing Calf Raise 3x",
-  "Hip Abductor 2x",
-  "Hip Adductor 2x",
-  "Smith Squat 3x",
-  "Leg Extension 3x",
-] as const;
+export const legsA: Exercise[] = [
+  { name: "Sleds", sets: 3 },
+  { name: "Leg Extension", sets: 3 },
+  { name: "hamstring curls", sets: 2 },
+  { name: "Standing Calf Raise", sets: 3 },
+  { name: "Hip Abductor", sets: 2 },
+  { name: "Hip Adductor", sets: 2 },
+  { name: "Machine Squat Quad Focus", sets: 3 },
+  { name: "Leg Extension", sets: 3 },
+];
 
-export const legsB = [
-  "Sleds 3x",
-  "Seated Hamstring Curl 3x",
-  "Leg Extension 3x",
-  "Lying Hamstring Curl 3x",
-  "RDLs 3x",
-  "Standing Calf Raise 3x",
-  "Seated Calf Raise 2x",
-  "Bulgarian Split Squad 3x",
-] as const;
+export const legsB: Exercise[] = [
+  { name: "Sleds", sets: 3 },
+  { name: "Seated Hamstring Curl", sets: 3 },
+  { name: "Leg Extension", sets: 3 },
+  { name: "Lying Hamstring Curl", sets: 3 },
+  { name: "RDLs", sets: 3 },
+  { name: "Standing Calf Raise", sets: 3 },
+  { name: "Seated Calf Raise", sets: 2 },
+  { name: "Machine Squat Hamstring Focus", sets: 3 },
+];
