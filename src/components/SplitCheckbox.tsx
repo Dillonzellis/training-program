@@ -4,7 +4,6 @@ import { useEffect } from "react";
 import { useLocalStorage } from "usehooks-ts";
 import { Checkbox } from "@/components/ui/checkbox";
 import type { CheckType } from "@/data/checks";
-import { Button } from "./ui/button";
 
 interface CheckProps extends CheckType {
   onClick: (id: string) => void;
@@ -13,15 +12,20 @@ interface CheckProps extends CheckType {
 
 const Check = ({ id, label, onClick, checked }: CheckProps) => {
   return (
-    <div className="flex items-center space-x-2" onClick={() => onClick(id)}>
-      <Checkbox id={id} checked={checked} />
+    <button
+      type="button"
+      onClick={() => onClick(id)}
+      className="flex items-center space-x-3 w-full p-3 sm:p-0 rounded-lg sm:rounded-none bg-accent/50 sm:bg-transparent hover:bg-accent sm:hover:bg-transparent transition-colors"
+    >
+      <Checkbox id={id} checked={checked} className="w-6 h-6 sm:w-4 sm:h-4" />
       <a
         href={`/ppl/${id}`}
-        className="text-base font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        className="text-lg sm:text-base font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
+        onClick={(e) => e.stopPropagation()}
       >
         {label}
       </a>
-    </div>
+    </button>
   );
 };
 
@@ -58,7 +62,7 @@ export const SplitCheckbox = ({ splitChecks }: SplitCheckboxProps) => {
 
   return (
     <div>
-      <div className="space-y-4 pb-8">
+      <div className="space-y-3 sm:space-y-4 pb-8">
         {splitChecks.map((check) => (
           <Check
             onClick={handleCheck}
@@ -68,9 +72,12 @@ export const SplitCheckbox = ({ splitChecks }: SplitCheckboxProps) => {
           />
         ))}
       </div>
-      <Button onClick={handleClearChecks} variant="outline">
+      <button
+        onClick={handleClearChecks}
+        className="w-full sm:w-auto px-6 py-3 sm:py-2 text-base sm:text-sm border rounded-md hover:bg-accent transition-colors"
+      >
         Clear Checks
-      </Button>
+      </button>
     </div>
   );
 };

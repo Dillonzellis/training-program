@@ -29,12 +29,12 @@ export default function WorkoutList({ exerciseList, storageKey, onClear }: Worko
           key={i}
           type="button"
           onClick={() => handleCheck(key)}
-          className="w-10 h-10 sm:w-8 sm:h-8 flex items-center justify-center rounded-md border border-input bg-background hover:bg-accent transition-colors"
+          className="w-14 h-14 sm:w-10 sm:h-10 flex items-center justify-center rounded-md border-2 border-input bg-background hover:bg-accent transition-colors"
           aria-label={`Set ${i + 1}`}
         >
           <Checkbox 
             checked={!!checkedState[key]} 
-            className="pointer-events-none"
+            className="w-7 h-7 sm:w-5 sm:h-5 pointer-events-none"
           />
         </button>
       );
