@@ -9,6 +9,7 @@ import WorkoutList from "@/components/workout/WorkoutList";
 import { PPLCrumbs } from "@/data/crumbs";
 import { chestA, tricepsA, shouldersA } from "@/data/sets";
 import { useLocalStorage } from "usehooks-ts";
+import { Button } from "@/components/ui/button";
 
 const STORAGE_KEY = "ppl-push-a-checks";
 
@@ -25,8 +26,8 @@ export default function PPLPush() {
   return (
     <MainWrapper>
       <MaxWidthWrapper>
-        <H1 className="pb-4 sm:pb-8">Push A</H1>
-        <H2>Triceps A</H2>
+        <H1 className="pb-4">Push A</H1>
+        <H2 className="mt-4">Triceps A</H2>
         <WorkoutList
           exerciseList={tricepsA}
           storageKey={STORAGE_KEY}
@@ -45,12 +46,9 @@ export default function PPLPush() {
           onClear={handleClearChecks}
         />
         <div className="mt-8 pb-4">
-          <button
-            onClick={handleClearChecks}
-            className="w-full sm:w-auto px-6 py-3 sm:py-2 text-base sm:text-sm border rounded-md hover:bg-accent transition-colors"
-          >
+          <Button onClick={handleClearChecks}>
             Clear Checks
-          </button>
+          </Button>
         </div>
         <BreadCrumb crumbs={PPLCrumbs} />
       </MaxWidthWrapper>

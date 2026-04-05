@@ -4,25 +4,28 @@
 
 @layer base {
   :root {
-    --background: 240 10% 3.9%;
-    --foreground: 0 0% 98%;
-    --card: 240 10% 3.9%;
-    --card-foreground: 0 0% 98%;
-    --popover: 240 10% 3.9%;
-    --popover-foreground: 0 0% 98%;
-    --primary: 0 0% 98%;
-    --primary-foreground: 240 5.9% 10%;
-    --secondary: 240 3.7% 15.9%;
-    --secondary-foreground: 0 0% 98%;
-    --muted: 240 3.7% 15.9%;
-    --muted-foreground: 240 5% 64.9%;
-    --accent: 240 3.7% 15.9%;
-    --accent-foreground: 0 0% 98%;
-    --destructive: 0 62.8% 30.6%;
-    --destructive-foreground: 0 0% 98%;
-    --border: 240 3.7% 15.9%;
-    --input: 240 3.7% 15.9%;
-    --ring: 240 4.9% 83.9%;
+    --background: 180 35% 5%;
+    --foreground: 180 40% 90%;
+    --card: 180 30% 7%;
+    --card-foreground: 180 40% 90%;
+    --popover: 180 30% 7%;
+    --popover-foreground: 180 40% 90%;
+    --primary: 180 55% 40%;
+    --primary-foreground: 180 50% 10%;
+    --secondary: 180 30% 11%;
+    --secondary-foreground: 180 40% 90%;
+    --muted: 180 25% 16%;
+    --muted-foreground: 180 35% 52%;
+    --accent: 182 50% 36%;
+    --accent-foreground: 180 40% 95%;
+    --destructive: 0 70% 45%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 180 30% 20%;
+    --input: 180 30% 11%;
+    --ring: 180 55% 40%;
+    --win-gray: 180 20% 62%;
+    --win-title: 180 55% 32%;
+    --win-title-text: 180 40% 95%;
   }
 }
 
@@ -32,6 +35,34 @@
   }
   body {
     @apply bg-background text-foreground;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+
+  ::selection {
+    background: hsl(180, 55%, 32%);
+    color: hsl(180, 40%, 95%);
+  }
+
+  ::-webkit-scrollbar {
+    width: 16px;
+    height: 16px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: hsl(180, 30%, 9%);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: hsl(180, 30%, 20%);
+    border: 2px solid hsl(180, 30%, 9%);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: hsl(180, 55%, 32%);
+  }
+
+  ::-webkit-scrollbar-button {
+    background: hsl(180, 30%, 9%);
+    border: 2px solid hsl(180, 30%, 9%);
   }
 }
-
