@@ -13,7 +13,10 @@ import { useLocalStorage } from "usehooks-ts";
 const STORAGE_KEY = "ppl-pull-b-checks";
 
 export default function PPLPull() {
-  const [, setCheckedState] = useLocalStorage<Record<string, boolean>>(STORAGE_KEY, {});
+  const [, setCheckedState] = useLocalStorage<Record<string, boolean>>(
+    STORAGE_KEY,
+    {},
+  );
 
   const handleClearChecks = () => {
     setCheckedState({});
@@ -23,11 +26,18 @@ export default function PPLPull() {
     <MainWrapper>
       <MaxWidthWrapper>
         <H1 className="pb-4 sm:pb-8">Pull B</H1>
-        <BreadCrumb crumbs={PPLCrumbs} />
         <H2>Biceps B</H2>
-        <WorkoutList exerciseList={bicepsB} storageKey={STORAGE_KEY} onClear={handleClearChecks} />
+        <WorkoutList
+          exerciseList={bicepsB}
+          storageKey={STORAGE_KEY}
+          onClear={handleClearChecks}
+        />
         <H2>Back B</H2>
-        <WorkoutList exerciseList={backB} storageKey={STORAGE_KEY} onClear={handleClearChecks} />
+        <WorkoutList
+          exerciseList={backB}
+          storageKey={STORAGE_KEY}
+          onClear={handleClearChecks}
+        />
         <div className="mt-8 pb-4">
           <button
             onClick={handleClearChecks}
@@ -36,6 +46,7 @@ export default function PPLPull() {
             Clear Checks
           </button>
         </div>
+        <BreadCrumb crumbs={PPLCrumbs} />
       </MaxWidthWrapper>
     </MainWrapper>
   );

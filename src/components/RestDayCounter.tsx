@@ -80,7 +80,7 @@ export const RestDayCounter = () => {
   }
 
   return (
-    <div className="flex gap-4 items-center pb-12">
+    <div className="flex gap-4 items-center pb-8">
       <div>Days Since Training</div>
       <div className={dayColorClass}>{dayCounter}</div>
       <div className="flex items-center gap-2">

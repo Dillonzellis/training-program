@@ -6,7 +6,7 @@ import type { CrumbType } from "@/data/crumbs";
 const Crumb = ({ name, href }: CrumbType) => {
   return (
     <Link
-      className="underline-offset-4 text-sm hover:underline md:text-base font-medium leading-none flex-nowrap"
+      className="underline-offset-4 text-sm hover:underline md:text-base font-medium leading-none flex-nowrap whitespace-nowrap"
       href={href}
     >
       {name}
@@ -20,7 +20,7 @@ interface BreadCrumbProps {
 
 export const BreadCrumb = ({ crumbs }: BreadCrumbProps) => {
   return (
-    <div className="flex gap-2 items-center pb-2 flex-nowrap overflow-scroll">
+    <div className="flex gap-2 items-center pb-2 flex-nowrap overflow-x-auto max-w-full">
       {crumbs.map((item, idx) => (
         <React.Fragment key={idx}>
           <Crumb name={item.name} href={item.href} />

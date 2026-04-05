@@ -13,7 +13,10 @@ import { useLocalStorage } from "usehooks-ts";
 const STORAGE_KEY = "ppl-push-a-checks";
 
 export default function PPLPush() {
-  const [, setCheckedState] = useLocalStorage<Record<string, boolean>>(STORAGE_KEY, {});
+  const [, setCheckedState] = useLocalStorage<Record<string, boolean>>(
+    STORAGE_KEY,
+    {},
+  );
 
   const handleClearChecks = () => {
     setCheckedState({});
@@ -23,13 +26,24 @@ export default function PPLPush() {
     <MainWrapper>
       <MaxWidthWrapper>
         <H1 className="pb-4 sm:pb-8">Push A</H1>
-        <BreadCrumb crumbs={PPLCrumbs} />
         <H2>Triceps A</H2>
-        <WorkoutList exerciseList={tricepsA} storageKey={STORAGE_KEY} onClear={handleClearChecks} />
+        <WorkoutList
+          exerciseList={tricepsA}
+          storageKey={STORAGE_KEY}
+          onClear={handleClearChecks}
+        />
         <H2>Chest A</H2>
-        <WorkoutList exerciseList={chestA} storageKey={STORAGE_KEY} onClear={handleClearChecks} />
+        <WorkoutList
+          exerciseList={chestA}
+          storageKey={STORAGE_KEY}
+          onClear={handleClearChecks}
+        />
         <H2>Shoulders A</H2>
-        <WorkoutList exerciseList={shouldersA} storageKey={STORAGE_KEY} onClear={handleClearChecks} />
+        <WorkoutList
+          exerciseList={shouldersA}
+          storageKey={STORAGE_KEY}
+          onClear={handleClearChecks}
+        />
         <div className="mt-8 pb-4">
           <button
             onClick={handleClearChecks}
@@ -38,6 +52,7 @@ export default function PPLPush() {
             Clear Checks
           </button>
         </div>
+        <BreadCrumb crumbs={PPLCrumbs} />
       </MaxWidthWrapper>
     </MainWrapper>
   );
