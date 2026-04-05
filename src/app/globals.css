@@ -4,28 +4,25 @@
 
 @layer base {
   :root {
-    --background: 180 35% 5%;
-    --foreground: 180 40% 90%;
-    --card: 180 30% 7%;
-    --card-foreground: 180 40% 90%;
-    --popover: 180 30% 7%;
-    --popover-foreground: 180 40% 90%;
-    --primary: 180 55% 40%;
-    --primary-foreground: 180 50% 10%;
-    --secondary: 180 30% 11%;
-    --secondary-foreground: 180 40% 90%;
-    --muted: 180 25% 16%;
-    --muted-foreground: 180 35% 52%;
-    --accent: 182 50% 36%;
-    --accent-foreground: 180 40% 95%;
-    --destructive: 0 70% 45%;
-    --destructive-foreground: 0 0% 100%;
-    --border: 180 30% 20%;
-    --input: 180 30% 11%;
-    --ring: 180 55% 40%;
-    --win-gray: 180 20% 62%;
-    --win-title: 180 55% 32%;
-    --win-title-text: 180 40% 95%;
+    --background: 120 100% 2%;
+    --foreground: 120 100% 50%;
+    --card: 120 100% 3%;
+    --card-foreground: 120 100% 50%;
+    --popover: 120 100% 3%;
+    --popover-foreground: 120 100% 50%;
+    --primary: 120 100% 50%;
+    --primary-foreground: 120 100% 2%;
+    --secondary: 120 100% 5%;
+    --secondary-foreground: 120 100% 40%;
+    --muted: 120 100% 8%;
+    --muted-foreground: 120 100% 30%;
+    --accent: 120 100% 60%;
+    --accent-foreground: 120 100% 2%;
+    --destructive: 0 100% 50%;
+    --destructive-foreground: 120 100% 2%;
+    --border: 120 100% 15%;
+    --input: 120 100% 5%;
+    --ring: 120 100% 50%;
   }
 }
 
@@ -33,36 +30,103 @@
   * {
     @apply border-border;
   }
+  
   body {
     @apply bg-background text-foreground;
-    font-family: 'IBM Plex Mono', monospace;
+    font-family: 'VT323', 'Courier New', monospace;
+    font-size: 18px;
+    line-height: 1.4;
+    text-shadow: 0 0 5px hsl(120, 100%, 40%);
   }
 
   ::selection {
-    background: hsl(180, 55%, 32%);
-    color: hsl(180, 40%, 95%);
+    background: hsl(120, 100%, 30%);
+    color: hsl(120, 100%, 5%);
   }
 
   ::-webkit-scrollbar {
-    width: 16px;
-    height: 16px;
+    width: 8px;
+    height: 8px;
   }
 
   ::-webkit-scrollbar-track {
-    background: hsl(180, 30%, 9%);
+    background: hsl(120, 100%, 2%);
   }
 
   ::-webkit-scrollbar-thumb {
-    background: hsl(180, 30%, 20%);
-    border: 2px solid hsl(180, 30%, 9%);
+    background: hsl(120, 100%, 20%);
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background: hsl(180, 55%, 32%);
+    background: hsl(120, 100%, 30%);
   }
+}
 
-  ::-webkit-scrollbar-button {
-    background: hsl(180, 30%, 9%);
-    border: 2px solid hsl(180, 30%, 9%);
-  }
+.crt-scanlines {
+  position: relative;
+}
+
+.crt-scanlines::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  pointer-events: none;
+  z-index: 10;
+}
+
+.crt-flicker {
+  animation: flicker 0.15s infinite;
+}
+
+@keyframes flicker {
+  0% { opacity: 0.97; }
+  50% { opacity: 1; }
+  100% { opacity: 0.98; }
+}
+
+.crt-glow {
+  text-shadow: 
+    0 0 2px hsl(120, 100%, 50%),
+    0 0 5px hsl(120, 100%, 40%),
+    0 0 10px hsl(120, 100%, 30%);
+}
+
+.crt-glow-strong {
+  text-shadow: 
+    0 0 5px hsl(120, 100%, 50%),
+    0 0 10px hsl(120, 100%, 45%),
+    0 0 20px hsl(120, 100%, 40%),
+    0 0 40px hsl(120, 100%, 30%);
+}
+
+.cursor-blink::after {
+  content: "_";
+  animation: blink 1s step-end infinite;
+}
+
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
+
+.box-glow {
+  box-shadow: 
+    0 0 5px hsl(120, 100%, 40%),
+    inset 0 0 5px hsl(120, 100%, 20%);
+}
+
+input, textarea {
+  background: hsl(120, 100%, 2%) !important;
+  color: hsl(120, 100%, 50%) !important;
+  caret-color: hsl(120, 100%, 50%) !important;
 }

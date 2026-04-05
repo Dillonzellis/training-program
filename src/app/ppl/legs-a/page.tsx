@@ -26,19 +26,22 @@ export default function PPLLegs() {
   return (
     <MainWrapper>
       <MaxWidthWrapper>
-        <H1 className="pb-4">Legs A</H1>
-        <H2 className="mt-4">Exercises</H2>
-        <WorkoutList
-          exerciseList={legsA}
-          storageKey={STORAGE_KEY}
-          onClear={handleClearChecks}
-        />
-        <div className="mt-8 pb-4">
-          <Button onClick={handleClearChecks}>
-            Clear Checks
-          </Button>
+        <div className="font-terminal">
+          <H1 className="pb-4">LEGS_A</H1>
+          
+          <H2 className="mt-6">EXERCISES:</H2>
+          <WorkoutList
+            exerciseList={legsA}
+            storageKey={STORAGE_KEY}
+            onClear={handleClearChecks}
+          />
+          <div className="mt-8 pb-4">
+            <Button onClick={handleClearChecks}>
+              [CLEAR_ALL]
+            </Button>
+          </div>
+          <BreadCrumb crumbs={PPLCrumbs} />
         </div>
-        <BreadCrumb crumbs={PPLCrumbs} />
       </MaxWidthWrapper>
     </MainWrapper>
   );

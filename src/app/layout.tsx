@@ -1,16 +1,17 @@
 import type { Metadata } from "next";
-import { IBM_Plex_Mono } from "next/font/google";
+import { VT323 } from "next/font/google";
 import "./globals.css";
 import { cn } from "@/lib/utils";
 import MainNav from "@/components/MainNav";
 
-const ibmPlexMono = IBM_Plex_Mono({
+const vt323 = VT323({
   subsets: ["latin"],
-  weight: ["400", "500", "600", "700"],
+  weight: ["400"],
+  variable: "--font-terminal",
 });
 
 export const metadata: Metadata = {
-  title: "Training Program",
+  title: "TRAINING_PROGRAM",
   description: "Track your workout routine",
 };
 
@@ -23,8 +24,8 @@ export default function RootLayout({
     <html lang="en">
       <body
         className={cn(
-          "min-h-screen bg-background text-foreground font-mono antialiased",
-          ibmPlexMono.className,
+          "min-h-screen bg-background text-foreground font-terminal antialiased crt-scanlines crt-flicker",
+          vt323.variable,
         )}
       >
         <MainNav />

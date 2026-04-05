@@ -52,9 +52,6 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "win-gray": "hsl(var(--win-gray))",
-        "win-title": "hsl(var(--win-title))",
-        "win-title-text": "hsl(var(--win-title-text))",
       },
       borderRadius: {
         lg: "0",
@@ -62,12 +59,12 @@ const config = {
         sm: "0",
       },
       fontFamily: {
-        mono: ['IBM Plex Mono', 'monospace'],
+        'terminal': ['VT323', 'Courier New', 'monospace'],
+        'mono': ['VT323', 'Courier New', 'monospace'],
       },
       boxShadow: {
-        'bevel': 'inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #c0c0c0',
-        'bevel-pressed': 'inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #808080, inset 2px 2px #c0c0c0',
-        'bevel-dark': 'inset -1px -1px #000000, inset 1px 1px #404040, inset -2px -2px #000000, inset 2px 2px #808080',
+        'glow': '0 0 10px hsl(120, 100%, 40%), 0 0 20px hsl(120, 100%, 30%)',
+        'glow-sm': '0 0 5px hsl(120, 100%, 40%)',
       },
       keyframes: {
         "accordion-down": {
@@ -78,10 +75,15 @@ const config = {
           from: { height: "var(--radix-accordion-content-height)" },
           to: { height: "0" },
         },
+        "scan": {
+          "0%": { transform: "translateY(-100%)" },
+          "100%": { transform: "translateY(100vh)" },
+        },
       },
       animation: {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
+        "scan": "scan 6s linear infinite",
       },
     },
   },

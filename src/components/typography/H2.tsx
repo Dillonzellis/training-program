@@ -9,7 +9,7 @@ export const H2 = ({ children, className }: H2Props) => {
   return (
     <h2
       className={cn(
-        "text-lg font-bold pb-2 border-b border-border",
+        "text-lg font-bold crt-glow font-terminal tracking-wider text-[hsl(120,100%,45%)]",
         className,
       )}
     >

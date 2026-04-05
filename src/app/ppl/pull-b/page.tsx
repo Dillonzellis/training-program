@@ -26,25 +26,28 @@ export default function PPLPull() {
   return (
     <MainWrapper>
       <MaxWidthWrapper>
-        <H1 className="pb-4">Pull B</H1>
-        <H2 className="mt-4">Biceps B</H2>
-        <WorkoutList
-          exerciseList={bicepsB}
-          storageKey={STORAGE_KEY}
-          onClear={handleClearChecks}
-        />
-        <H2>Back B</H2>
-        <WorkoutList
-          exerciseList={backB}
-          storageKey={STORAGE_KEY}
-          onClear={handleClearChecks}
-        />
-        <div className="mt-8 pb-4">
-          <Button onClick={handleClearChecks}>
-            Clear Checks
-          </Button>
+        <div className="font-terminal">
+          <H1 className="pb-4">PULL_B</H1>
+          
+          <H2 className="mt-6">BICEPS_B:</H2>
+          <WorkoutList
+            exerciseList={bicepsB}
+            storageKey={STORAGE_KEY}
+            onClear={handleClearChecks}
+          />
+          <H2>BACK_B:</H2>
+          <WorkoutList
+            exerciseList={backB}
+            storageKey={STORAGE_KEY}
+            onClear={handleClearChecks}
+          />
+          <div className="mt-8 pb-4">
+            <Button onClick={handleClearChecks}>
+              [CLEAR_ALL]
+            </Button>
+          </div>
+          <BreadCrumb crumbs={PPLCrumbs} />
         </div>
-        <BreadCrumb crumbs={PPLCrumbs} />
       </MaxWidthWrapper>
     </MainWrapper>
   );

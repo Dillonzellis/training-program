@@ -32,7 +32,7 @@ export default function WorkoutList({
           key={i}
           type="button"
           onClick={() => handleCheck(key)}
-          className="w-12 h-12 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-[hsl(180,30%,28%)] border-t-[hsl(182,38%,72%)] border-l-[hsl(182,38%,72%)] border-r-[hsl(180,30%,28%)] border-b-[hsl(180,30%,28%)] bg-secondary hover:bg-muted active:bg-secondary"
+          className="w-12 h-12 flex items-center justify-center border border-[hsl(120,100%,20%)] hover:border-[hsl(120,100%,40%)] hover:shadow-glow-sm transition-all"
           aria-label={`Set ${i + 1}`}
         >
           <Checkbox
@@ -51,10 +51,10 @@ export default function WorkoutList({
         {exerciseList.map((item) => (
           <li
             key={item.name}
-            className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-2 w-full border-b border-border gap-2"
+            className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-3 w-full border-b border-[hsl(120,100%,12%)] gap-2"
           >
-            <div className="text-base font-medium">
-              {item.name}
+            <div className="text-base font-terminal text-[hsl(120,100%,45%)]">
+              {">"} {item.name}
             </div>
             <div className="flex flex-wrap gap-2">
               {renderCheckboxes(item.name, item.sets)}

@@ -15,12 +15,12 @@ const Check = ({ id, label, onClick, checked }: CheckProps) => {
     <button
       type="button"
       onClick={() => onClick(id)}
-      className="flex items-center space-x-3 w-full p-2 border-2 border-[hsl(180,30%,28%)] border-t-[hsl(182,38%,72%)] border-l-[hsl(182,38%,72%)] border-r-[hsl(180,30%,28%)] border-b-[hsl(180,30%,28%)] bg-secondary hover:bg-muted active:bg-secondary"
+      className="flex items-center space-x-3 w-full p-2 border border-[hsl(120,100%,20%)] hover:border-[hsl(120,100%,40%)] hover:shadow-glow-sm transition-all"
     >
       <Checkbox id={id} checked={checked} />
       <a
         href={`/ppl/${id}`}
-        className="text-base font-medium leading-none"
+        className="text-base font-medium leading-none font-terminal text-[hsl(120,100%,45%)]"
         onClick={(e) => e.stopPropagation()}
       >
         {label}
@@ -74,9 +74,9 @@ export const SplitCheckbox = ({ splitChecks }: SplitCheckboxProps) => {
       </div>
       <button
         onClick={handleClearChecks}
-        className="w-full sm:w-auto px-4 py-1 text-sm border-2 border-[hsl(180,30%,28%)] border-t-[hsl(182,38%,72%)] border-l-[hsl(182,38%,72%)] border-r-[hsl(180,30%,28%)] border-b-[hsl(180,30%,28%)] bg-primary text-primary-foreground hover:bg-accent active:bg-primary"
+        className="px-4 py-1 border border-[hsl(120,100%,30%)] text-[hsl(120,100%,50%)] hover:bg-[hsl(120,100%,50%)] hover:text-[hsl(120,100%,2%)] hover:shadow-glow transition-all font-terminal"
       >
-        Clear Checks
+        [CLEAR]
       </button>
     </div>
   );

@@ -26,31 +26,34 @@ export default function PPLPush() {
   return (
     <MainWrapper>
       <MaxWidthWrapper>
-        <H1 className="pb-4">Push B</H1>
-        <H2 className="mt-4">Chest B</H2>
-        <WorkoutList
-          exerciseList={chestB}
-          storageKey={STORAGE_KEY}
-          onClear={handleClearChecks}
-        />
-        <H2>Triceps B</H2>
-        <WorkoutList
-          exerciseList={tricepsB}
-          storageKey={STORAGE_KEY}
-          onClear={handleClearChecks}
-        />
-        <H2>Shoulders B</H2>
-        <WorkoutList
-          exerciseList={shouldersB}
-          storageKey={STORAGE_KEY}
-          onClear={handleClearChecks}
-        />
-        <div className="mt-8 pb-4">
-          <Button onClick={handleClearChecks}>
-            Clear Checks
-          </Button>
+        <div className="font-terminal">
+          <H1 className="pb-4">PUSH_B</H1>
+          
+          <H2 className="mt-6">CHEST_B:</H2>
+          <WorkoutList
+            exerciseList={chestB}
+            storageKey={STORAGE_KEY}
+            onClear={handleClearChecks}
+          />
+          <H2>TRICEPS_B:</H2>
+          <WorkoutList
+            exerciseList={tricepsB}
+            storageKey={STORAGE_KEY}
+            onClear={handleClearChecks}
+          />
+          <H2>SHOULDERS_B:</H2>
+          <WorkoutList
+            exerciseList={shouldersB}
+            storageKey={STORAGE_KEY}
+            onClear={handleClearChecks}
+          />
+          <div className="mt-8 pb-4">
+            <Button onClick={handleClearChecks}>
+              [CLEAR_ALL]
+            </Button>
+          </div>
+          <BreadCrumb crumbs={PPLCrumbs} />
         </div>
-        <BreadCrumb crumbs={PPLCrumbs} />
       </MaxWidthWrapper>
     </MainWrapper>
   );

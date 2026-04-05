@@ -13,11 +13,14 @@ export default function PushPullLegs() {
   return (
     <MainWrapper>
       <MaxWidthWrapper>
-        <div>
-          <H1>Push/Pull/Legs</H1>
-          <p className="text-sm text-muted-foreground pb-8">{updateDate}</p>
-          <H2 className="mt-4">Current Day</H2>
-          <SplitCheckbox splitChecks={pplChecks} />
+        <div className="font-terminal">
+          <H1>PUSH_PULL_LEGS</H1>
+          <p className="text-sm text-[hsl(120,100%,30%)] pb-8">{updateDate}</p>
+          
+          <H2 className="mb-4">CURRENT_DAY:</H2>
+          <div className="mb-4">
+            <SplitCheckbox splitChecks={pplChecks} />
+          </div>
           <RestDayCounter />
           <BreadCrumb crumbs={PPLCrumbs} />
         </div>
