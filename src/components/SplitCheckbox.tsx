@@ -61,7 +61,7 @@ export const SplitCheckbox = ({ splitChecks }: SplitCheckboxProps) => {
   };
 
   return (
-    <div>
+    <div className="pb-8">
       <div className="space-y-3 sm:space-y-4 pb-8">
         {splitChecks.map((check) => (
           <Check

@@ -80,14 +80,17 @@ export const RestDayCounter = () => {
   }
 
   return (
-    <div className="flex gap-2 items-center">
-      <Button variant="outline" size="icon" onClick={handleDayCounter}>
-        <ChevronUp className="h-4 w-4" />
-      </Button>
+    <div className="flex gap-4 items-center pb-12">
+      <div>Days Since Training</div>
       <div className={dayColorClass}>{dayCounter}</div>
-      <Button variant="outline" onClick={handleResetCounter}>
-        Reset
-      </Button>
+      <div className="flex items-center gap-2">
+        <Button variant="outline" onClick={handleResetCounter}>
+          Reset
+        </Button>
+        <Button variant="outline" size="icon" onClick={handleDayCounter}>
+          <ChevronUp className="h-4 w-4" />
+        </Button>
+      </div>
     </div>
   );
 };

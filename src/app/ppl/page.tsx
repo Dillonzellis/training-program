@@ -16,12 +16,10 @@ export default function PushPullLegs() {
             Push/Pull/Legs
           </h1>
           <p className="text-sm text-muted-foreground pb-8">{updateDate}</p>
-          <BreadCrumb crumbs={PPLCrumbs} />
           <h2 className="text-2xl font-bold pb-4">Current Day</h2>
-          <div className="flex items-end gap-4 md:gap-8">
-            <SplitCheckbox splitChecks={pplChecks} />
-            <RestDayCounter />
-          </div>
+          <SplitCheckbox splitChecks={pplChecks} />
+          <RestDayCounter />
+          <BreadCrumb crumbs={PPLCrumbs} />
         </div>
       </MaxWidthWrapper>
     </MainWrapper>
