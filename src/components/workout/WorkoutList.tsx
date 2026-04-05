@@ -32,12 +32,12 @@ export default function WorkoutList({
           key={i}
           type="button"
           onClick={() => handleCheck(key)}
-          className="w-12 h-12 sm:w-10 sm:h-10 flex items-center justify-center border-2 border-[hsl(180,30%,28%)] border-t-[hsl(182,38%,72%)] border-l-[hsl(182,38%,72%)] border-r-[hsl(180,30%,28%)] border-b-[hsl(180,30%,28%)] bg-secondary hover:bg-muted active:bg-secondary"
+          className="w-14 h-14 sm:w-10 sm:h-10 flex items-center justify-center rounded-md border-2 border-input bg-background hover:bg-accent transition-colors"
           aria-label={`Set ${i + 1}`}
         >
           <Checkbox
             checked={!!checkedState[key]}
-            className="pointer-events-none"
+            className="w-7 h-7 sm:w-5 sm:h-5 pointer-events-none"
           />
         </button>,
       );
@@ -47,16 +47,16 @@ export default function WorkoutList({
 
   return (
     <div className="w-full">
-      <ul className="my-4 list-none">
+      <ul className="my-4 list-disc">
         {exerciseList.map((item) => (
           <li
             key={item.name}
-            className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-2 w-full border-b border-border gap-2"
+            className="flex flex-col sm:flex-row sm:items-center sm:justify-between py-3 sm:py-2 w-full border-b gap-2"
           >
-            <div className="text-base font-medium">
+            <div className="text-base sm:text-base font-medium">
               {item.name}
             </div>
-            <div className="flex flex-wrap gap-2">
+            <div className="flex flex-wrap gap-2 sm:gap-1">
               {renderCheckboxes(item.name, item.sets)}
             </div>
           </li>

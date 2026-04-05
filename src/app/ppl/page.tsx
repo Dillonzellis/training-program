@@ -6,17 +6,17 @@ import MaxWidthWrapper from "@/components/MaxWidthWrapper";
 import { SplitCheckbox } from "@/components/SplitCheckbox";
 import { RestDayCounter } from "@/components/RestDayCounter";
 import { pplChecks } from "@/data/checks";
-import { H1 } from "@/components/typography/H1";
-import { H2 } from "@/components/typography/H2";
 
 export default function PushPullLegs() {
   return (
     <MainWrapper>
       <MaxWidthWrapper>
         <div>
-          <H1>Push/Pull/Legs</H1>
+          <h1 className="scroll-m-20 text-4xl font-extrabold tracking-tight lg:text-5xl pb-2">
+            Push/Pull/Legs
+          </h1>
           <p className="text-sm text-muted-foreground pb-8">{updateDate}</p>
-          <H2 className="mt-4">Current Day</H2>
+          <h2 className="text-2xl font-bold pb-4">Current Day</h2>
           <SplitCheckbox splitChecks={pplChecks} />
           <RestDayCounter />
           <BreadCrumb crumbs={PPLCrumbs} />

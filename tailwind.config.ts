@@ -52,22 +52,11 @@ const config = {
           DEFAULT: "hsl(var(--card))",
           foreground: "hsl(var(--card-foreground))",
         },
-        "win-gray": "hsl(var(--win-gray))",
-        "win-title": "hsl(var(--win-title))",
-        "win-title-text": "hsl(var(--win-title-text))",
       },
       borderRadius: {
-        lg: "0",
-        md: "0",
-        sm: "0",
-      },
-      fontFamily: {
-        mono: ['IBM Plex Mono', 'monospace'],
-      },
-      boxShadow: {
-        'bevel': 'inset -1px -1px #0a0a0a, inset 1px 1px #ffffff, inset -2px -2px #808080, inset 2px 2px #c0c0c0',
-        'bevel-pressed': 'inset -1px -1px #ffffff, inset 1px 1px #0a0a0a, inset -2px -2px #808080, inset 2px 2px #c0c0c0',
-        'bevel-dark': 'inset -1px -1px #000000, inset 1px 1px #404040, inset -2px -2px #000000, inset 2px 2px #808080',
+        lg: "var(--radius)",
+        md: "calc(var(--radius) - 2px)",
+        sm: "calc(var(--radius) - 4px)",
       },
       keyframes: {
         "accordion-down": {

@@ -15,12 +15,12 @@ const Check = ({ id, label, onClick, checked }: CheckProps) => {
     <button
       type="button"
       onClick={() => onClick(id)}
-      className="flex items-center space-x-3 w-full p-2 border-2 border-[hsl(180,30%,28%)] border-t-[hsl(182,38%,72%)] border-l-[hsl(182,38%,72%)] border-r-[hsl(180,30%,28%)] border-b-[hsl(180,30%,28%)] bg-secondary hover:bg-muted active:bg-secondary"
+      className="flex items-center space-x-3 w-full p-3 sm:p-0 rounded-lg sm:rounded-none bg-accent/50 sm:bg-transparent hover:bg-accent sm:hover:bg-transparent transition-colors"
     >
-      <Checkbox id={id} checked={checked} />
+      <Checkbox id={id} checked={checked} className="w-6 h-6 sm:w-4 sm:h-4" />
       <a
         href={`/ppl/${id}`}
-        className="text-base font-medium leading-none"
+        className="text-lg sm:text-base font-medium leading-none peer-disabled:cursor-not-allowed peer-disabled:opacity-70"
         onClick={(e) => e.stopPropagation()}
       >
         {label}
@@ -62,7 +62,7 @@ export const SplitCheckbox = ({ splitChecks }: SplitCheckboxProps) => {
 
   return (
     <div className="pb-8">
-      <div className="space-y-2 pb-8">
+      <div className="space-y-3 sm:space-y-4 pb-8">
         {splitChecks.map((check) => (
           <Check
             onClick={handleCheck}
@@ -74,7 +74,7 @@ export const SplitCheckbox = ({ splitChecks }: SplitCheckboxProps) => {
       </div>
       <button
         onClick={handleClearChecks}
-        className="w-full sm:w-auto px-4 py-1 text-sm border-2 border-[hsl(180,30%,28%)] border-t-[hsl(182,38%,72%)] border-l-[hsl(182,38%,72%)] border-r-[hsl(180,30%,28%)] border-b-[hsl(180,30%,28%)] bg-primary text-primary-foreground hover:bg-accent active:bg-primary"
+        className="w-full sm:w-auto px-6 py-3 sm:py-2 text-base sm:text-sm border rounded-md hover:bg-accent transition-colors"
       >
         Clear Checks
       </button>
